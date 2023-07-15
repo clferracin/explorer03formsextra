@@ -1,0 +1,252 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body, input, button, select, textarea {
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  background: #BFD7E4;
+}
+
+body::before {
+  content: '';
+  width: 100%;
+  height: 465px;
+
+  background: #293241;
+
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  left: 0;
+
+}
+
+h1 {
+  font-family: 'Staatliches', cursive;
+}
+
+.page{
+  width: 750px;
+  margin: auto;
+}
+
+header {
+  width: 391px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 109px auto 32px auto;
+}
+
+header h1 {
+  font-size: 36px;
+  line-height: normal;
+  font-weight: 400;
+  color: #FFF;
+}
+
+.p-title {
+  width: 391px;
+  height: 46px;
+}
+
+header p {
+  font-size: 16px;
+  line-height: normal;
+  font-weight: 400;
+  color: #FFF;
+
+}
+
+header img {
+  width: 225px;
+  height: 100px;
+}
+
+.form-header {
+  width: 750px;
+  height: 133px;
+  background: #F67669;
+  border-radius: 20px 20px 0px 0px;
+  display: flex;
+  align-items: center;
+}
+
+.form-header h1 {
+  color: #FFF;
+  font-size: 24px;
+  line-height: 34px;
+  font-weight: 400;
+  margin: auto;
+}
+
+form {
+  background: #FFF;
+  min-height: 133px;
+  padding: 032px 64px 0px 64px;
+}
+
+.fieldset-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+
+fieldset {
+  border: none;
+}
+
+fieldset legend {
+  color: #253B51;
+  font-family: 'Staatliches', cursive;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 34px;
+
+  text-align: center;
+  width: 100%;
+
+  border-bottom: 1px solid #E6E6F0;
+  padding-bottom: 8px;
+  margin-top: 32px;
+}
+
+.input-name {
+  display: flex;
+  gap: 22px;
+}
+
+.input-wrapper {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.input-wrapper label,
+.checkbox-wrapper label {
+  color: #4E4958;
+  font-size: 14px;
+  line-height: 24px;
+  margin-bottom: 8px;
+}
+
+.input-wrapper label span {
+  margin-left: 12px;
+
+  color: #a9a7af;
+  font-size: 12px;
+  line-height: 20px;
+
+}
+
+.input-wrapper label span:hover {
+  color: #6c6a71;
+} 
+
+.input-wrapper input, 
+.input-wrapper textarea,
+.input-wrapper select  {
+  border-radius: 8px;
+  border: 1px solid #E6E6F0;
+  background: #FAFAFC;
+  height: 56px;
+  padding: 0 24px;
+  
+  color: #C1BCCC;
+  font-size: 16px;
+  line-height: 26px;
+}
+
+.input-wrapper textarea {
+  padding: 4px 24px;
+  height: 167px;
+}
+
+.input-wrapper select {
+  appearance: none;
+  -webkit-appearance: none;
+  background-image: url("data:image/svg+xml,%3Csvg width='24' height='24' viewBox='0 0 24 24' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cg clip-path='url(%23clip0_1_54)'%3E%3Cpath d='M8 10L12 14L16 10' stroke='%239C98A6' stroke-width='1.5' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/g%3E%3Cdefs%3E%3CclipPath id='clip0_1_54'%3E%3Crect width='24' height='24' fill='white'/%3E%3C/clipPath%3E%3C/defs%3E%3C/svg%3E%0A");
+  background-repeat: no-repeat;
+  background-position: right 24px top 50%;
+}
+
+.checkbox-wrapper {
+  position: relative;
+}
+
+.checkbox-wrapper label {
+  margin: 0;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.checkbox-wrapper input {
+  position: absolute;
+  top: 0;
+  left:0;
+  width: 24px;
+  height: 24px;
+  opacity: 0;
+}
+
+.checkbox-wrapper label::before {
+  content: '';
+  width: 24px;
+  height: 24px;
+  border: 1px solid #E6E6F0;
+  border-radius: 8px;
+  display: block;
+}
+
+.checkbox-wrapper input:checked + label::before {
+  background-image: url("data:image/svg+xml,%3Csvg width='24' height='24' viewBox='0 0 24 24' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cg clip-path='url(%23clip0_1813_14)'%3E%3Cpath d='M9 16.17L4.83 12L3.41 13.41L9 19L21 7L19.59 5.59L9 16.17Z' fill='%2342D3FF'/%3E%3C/g%3E%3Cdefs%3E%3CclipPath id='clip0_1813_14'%3E%3Crect width='24' height='24' fill='white'/%3E%3C/clipPath%3E%3C/defs%3E%3C/svg%3E%0A");
+}
+
+.checkbox-wrapper input:focus + label::before {
+  outline: 2px solid black;
+}
+
+.col-2 {
+  display: flex;
+  flex-direction: row;
+  gap:32px;
+}
+
+.col-2-time {
+  display: flex;
+  flex-direction: row;
+  gap:10px;
+}
+
+footer {
+  border-radius: 0px 0px 20px 20px;
+  background: #FFF;
+  min-height: 133px;
+  padding: 64px;
+  margin-bottom: 392px;
+  display:flex;
+  flex-direction: column;
+}
+
+footer .button {
+  border-radius: 8px;
+  background: #F67669;
+  border: none;
+  height: 51px;
+
+  color: #FFF;
+  font-family: 'Staatliches', cursive;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 26px; 
+}
+
+footer .button:hover {
+  background: #ed5447;
+}
